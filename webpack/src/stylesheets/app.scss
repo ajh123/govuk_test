@@ -1,0 +1,4 @@
+@use "govuk-frontend" with (
+  $govuk-suppressed-warnings: ("legacy-organisation-colours"),
+  $govuk-font-family: ("arial", "sans-serif")
+);

@@ -1,0 +1,40 @@
+{
+  "name": "samland_website",
+  "version": "1.0.0",
+  "description": "Samland",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack serve --progress --mode development",
+    "prebuild": "npm run clean",
+    "build": "webpack --progress --mode production",
+    "clean": "del-cli dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "example.com"
+  },
+  "keywords": [
+    "samland"
+  ],
+  "author": "Samland-Gov",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "autoprefixer": "^10.4.21",
+    "babel-loader": "^10.0.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "mini-css-extract-plugin": "^2.9.2",
+    "postcss-loader": "^8.1.1",
+    "sass-embedded": "^1.85.1",
+    "sass-loader": "^16.0.5",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.93.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "dependencies": {
+    "govuk-frontend": "^5.9.0"
+  }
+}
